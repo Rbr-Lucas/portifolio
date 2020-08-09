@@ -1,0 +1,290 @@
+/* CONFIGUERAÇÕES GERAIS DA PÁGINA */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0; padding: 0; 
+    font-size: 100%; 
+    border: none; 
+    font-family: 'Raleway', sans-serif; 
+    font-weight: lighter;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    background: #1d1d1d;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-menu {
+    display: none;
+}
+
+/* ESTILIZAÇÃO DO CABEÇALHO */
+.cabecalho {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 3% 0 3% 0;
+    background: #c52901;
+    height: 56px;
+}
+
+.logo {
+    display: inline-block;
+    height: 56px;
+    padding-left: 7%;
+    width: 70%;
+}
+
+.img-logo {
+    width: 35px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.span-logo {
+    width: 100%;
+    display: inline-block;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    font-size: 1.5em;
+    padding-left: 4%;
+
+}
+
+.links-logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.btn-menu {
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 10%;
+    width: 5%;
+    height: 56px;
+    color: white;
+    background: transparent;
+}
+
+/* MENU */
+.nav-menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #af2401f8;
+    top: 0;
+    left: 0;
+}
+.btn-close {
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+    padding-top: 4%;
+    padding-right: 5%;
+}
+ul {
+    width: 100%;
+    text-align: center;
+    float: left;
+    padding-top: 12%;
+}
+li {
+    padding: 5%;
+}
+.nav-menu li a:hover {
+    border: 1px solid white;
+}
+
+.nav-menu li a {
+    padding: 5%;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+
+/* CORPO DO SITE */
+main {
+    width: 88%;
+    padding: 2% 6% 0 6%;
+}
+
+h2 {
+    width: 100%;
+    padding-top: 5%;
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+}
+img {
+    max-width: 300px;
+    width: 28%;
+    display: block;
+    margin: 0 auto;
+}
+.timer {
+    background: white;
+    width: 56%;
+    max-width: 730px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 4%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.time {
+    margin: 0 auto;
+    font-size: 3em;
+    font-weight: 600;
+    font-family: 'Permanent Marker', cursive;
+}
+.btn-time {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 2%;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px #000000;
+    cursor: pointer;
+}
+.start {
+    background: linear-gradient(to right, #0dce17, #09c012);
+    border: 2px solid #57e45e;
+}
+
+.stop {
+    background: linear-gradient(to right, #da0b0b, #c00909);
+    border: 2px solid #eb4c4c;
+}
+.break {
+    background: linear-gradient(to right, #fc6a09, #e05c04);
+    border: 2px solid #f08c1a;
+}
+
+.configuracoes {
+    margin: 0 auto;
+    width: 75%;
+    max-width: 600px;
+    margin-top: 12%;
+    background-color: #c52901;
+    border-radius: 5px;
+    line-height: 3em;
+    font-size: 1.02em;
+    color: white;
+}
+
+.configuracoes label {
+    padding-left: 2%;
+}
+.configuracoes input {
+    display: block;
+    float: right;
+    width: 25%;
+    margin-right: 3%;
+    margin-top: 0.8em;
+}
+
+.btn-ok {
+    display: block;
+    clear: both;
+    margin-left: auto;
+    margin-right: 3%;
+    padding: 3% 4% 3% 4%;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+
+
+/* ============= LARGE DEVICES - DESKTOP ============= */
+@media screen and (min-width: 480px) {
+    .configuracoes {
+        font-size: 1.1em;
+    }
+}
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        padding: 1% 0 1% 0;
+    }
+    .btn-menu {
+        display: none;
+    }
+    .btn-close {
+        display: none;
+    }
+    .nav-menu {
+        background: transparent;
+        display: block;
+        width: 58%;
+        position: relative; 
+        line-height: 56px; 
+        padding-left: 2%;
+    }
+    .nav-menu ul {
+        display: block;
+        padding: 0;
+    }
+    .nav-menu li {
+        display: inline;
+        padding: 0;
+    }
+    .nav-menu li a {
+        padding: 0 4% 0 4%;
+        margin: 0;
+        font-size: 0.9em;
+        font-weight: normal;
+    }
+    .nav-menu li a:hover {
+        border: none;
+    }
+    .logo {
+        width: 28%;
+    }
+    .timer {
+        height: 100px;
+    }
+    .configuracoes {
+        font-size: 1.2em;
+    }
+}
+
+/* ============= LARGE DEVICES - WIDE SCREEN ============= */
+@media screen and (min-width: 1280px) {
+    .nav-menu li a {
+        font-size: 1.2em;
+
+    }
+    .nav-menu {
+        padding-left: 15%;
+    }
+    .logo {
+        width: 15%;
+    }
+    .timer {
+        width: 52%;
+        height: 120px;
+    }
+}

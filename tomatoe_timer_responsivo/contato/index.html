@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3401dd7efb.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class = 'cabecalho'>
+        <h1 class = 'logo'><a class = 'links-logo' href="../main/index.html"><img class = 'img-logo' src="../banco_imagens/relogio-logo.png" alt="logo-relogio"><span class = 'span-logo'>tomato timer</span></a></h1>
+        <button class = 'btn-menu'><i class="fas fa-bars fa-lg"></i></button>
+        <nav class = 'nav-menu'>
+            <a class = 'btn-close'>x</a>
+            <ul>
+                <li><a href="../main/index.html">Timer</a></li>
+                <li><a href="../como_funciona/index.html">Como funciona</a></li>
+                <li><a href="../quem_somos/index.html">Quem somos</a></li>
+                <li><a href="../contato/index.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>CONTATO</h2>
+        <article class = 'artigo'>
+            <p>SEGUE ABAIXO NOSSAS REDES SOCIAIS: </p>
+            <p>
+                • FACEBOOK <br>
+                • TWITTER <br>
+                • INSTAGRAM <br>
+                • WHATSAPP <br>
+            </p>
+        </article>
+        <article class = 'artigo' id = 'inputs'>
+            <h4>DESEJA DEIXAR UMA MENSAGEM?</h4>
+            <form action="post">
+                <p>
+                    <label for="input_email">EMAIL: </label>
+                    <input type="email" name="input_email" id="input_email">
+                </p>
+                <p>
+                    <label for="input_comentario">MENSAGEM: </label>
+                    <textarea name="input_comentario" id="input_comentario" placeholder="Deixe aqui sua mensagem" rows = '5' cols = '25'></textarea>
+                </p>
+                <button  type="submit" class = 'btn-enviar'>ENVIAR</button>
+            </form>
+        </article>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
