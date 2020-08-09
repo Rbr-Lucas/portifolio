@@ -1,0 +1,491 @@
+/* DEFINIÇÕES PADRÃO */
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: lighter;
+    border: none;
+}
+html, body {
+    overflow-x: hidden;
+}
+body{
+    background: url("./banco imagens/fundo-vermelho.png");
+    background-repeat: no-repeat;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+
+/* ===== CABEÇALHO ===== */
+.cabecalho {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    background-color: #294592;
+    height: 52px;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    box-shadow: 3px 3px 6px #971c1c;
+}
+.main-menu {
+    display: flex;
+    align-items: center;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+.img-logo{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    height: 26px;
+}
+.nome-logo{
+    color: #ffffff;
+    padding-left: 5%;
+    font-size: 1.45em;
+    font-family: 'MuseoModerno', cursive;
+    width: 50%;
+}
+
+
+/* MENU - CABEÇALHO */
+.menu {
+    margin-right: 0;
+    width: 40%;
+    height: 100%;
+}
+.btn-menu {
+    display: block;
+    float: right;
+    background: transparent;
+    color: white;
+    font-size: 1em;
+}
+.nav-menu{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #294592;
+}
+.btn-close{
+    float: right;
+    margin-right: 6%;
+    margin-top: 8%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+ul {
+    text-align: center;
+    width: 100%;
+    padding-top: 20%;
+}
+ul li{
+    width: 50%;
+    padding: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+ul li a{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+ul li:hover{
+    border: 1px white solid;
+}
+
+
+/* ===== CORPO - PRIMEIRA PARTE===== */
+.corpo {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    border-radius: 8px;
+}
+.primeira-parte {
+    background-color: rgb(0,0,0, 0);
+    width: 100%;
+    margin-bottom: 13%;
+    margin-top: 5%;
+    text-align: center;
+}
+h1 {
+    font-size: 2em;
+    color: white;
+    padding-bottom: 1%;
+    font-weight: 500;
+    text-shadow: 3px 3px 6px #971c1cc4;
+}
+.valor-cr{
+    padding-top: 2%;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.cr_atualizado {
+    color: #fff;
+    font-weight: bold;
+}
+.div-historico{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transition-duration: 400ms;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+.btn-historico{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 0.85em;
+    font-weight: 600;
+    padding-top: 2%;
+}
+.dica-historico{
+    color: white;
+    font-size: 0.8em;
+    font-weight: 500;
+    padding-top: 2%;
+}
+.div-tabela-historico{
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+.titulo-tabela{
+    display:none;
+}
+.tabela-historico{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    width: 97%;
+    border: 2px white solid;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #971c1c;
+}
+.tabela-historico tr td {
+    height: 55px;
+    border-top: 1px white solid;
+    padding-bottom: 0.5%;
+    font-weight: 500;
+    font-size: 0.95em;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.tabela-historico tr:hover td {
+    background-color: #971c1c;
+}
+.tabela-historico tr:nth-child(1) td{
+    border-radius: 10px;
+    font-family: 'MuseoModerno', cursive;
+    font-size: 0.9em;
+    text-transform: lowercase;
+}
+.aviso-erro{
+    font-weight: 500;
+    color: #df2b2b;
+}
+.aviso-300{
+    color: white;
+    font-size: 0.8em;
+}
+
+/* ===== CORPO - SEGUNDA PARTE===== */
+h2 {
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-left: 3%;
+    margin-top: 7%;
+}
+.aviso {
+    font-size: 0.85em;
+    font-weight: 500;
+    color: #df2b2b;
+    width: 94%;
+    text-align: left;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-adc-alteracao{
+    text-align: left;
+    margin-left: 2.5%;
+    width: 70%;
+    font-size: 0.9em;
+    margin-top: 9%;
+    margin-bottom: 1%;
+    background-color: white;
+
+}
+.btn-nome{
+    padding-left: 4%;
+    padding-right: 17%;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.input_alteracoes{
+    display: none;
+    margin-top: 5%;
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px #dddddd;
+    border: 1px #294592 solid;
+    font-size: 0.9em;
+}
+.icone-titulos{
+    font-size: 0.7em;
+    padding-right: 2%;
+    display: none;
+}
+h3 {
+    border-bottom: 1px black solid;
+    width: 75%;
+    font-weight: 400;
+    font-size: 1.3em;
+    padding-left: 1.5%;
+}
+.tabela-input, .tabela-input tr{
+    width: 100%;
+}
+.tabela-input tr td {
+    text-align: left;
+    width: 65%;
+}
+.campo_input_nome, #campo_input_hora, #campo_input_nota, #campo_input_nota_antiga {
+    border-bottom: 1px black solid;
+    height: 30px;
+    width: 65%;
+    margin-top: 2%;
+
+}
+#campo_input_hora, #campo_input_nota, #campo_input_nota_final {
+    width: 50%;
+}
+.submit_button {
+    background-color: #294592;
+    /* border: 1px black solid; */
+    color: white;
+    box-shadow: 3px 3px 6px #dddddd;
+    border-radius: 25px;
+    padding: 2%;
+    font-size: 1em;
+    margin-left: auto;
+    display: block;
+    cursor: pointer;
+    font-family: 'MuseoModerno', cursive;
+}
+
+/* RODAPÉ */
+footer {
+    margin-top: 1.5%;
+    width: 100%;
+    text-align: center;
+}
+footer span {
+    font-weight: 600;
+    font-size: 0.8em;
+    font-family: 'MuseoModerno', cursive;
+}
+
+
+/* == PARTE RESPONSIVA == */
+@media screen and (min-width: 720px) {
+    body{
+        background-image: url("./banco imagens/fundo-vermelho-desktop-menor.png");
+    }
+    .cabecalho{
+        width: 100%;
+        margin-top: 3px;
+        border-radius: 0;
+    }
+    .main-menu, .corpo{
+        width: 85%;
+    }
+    /* ===== CABEÇALHO ===== */
+    .logo{
+        width: 30%;
+    }
+    .img-logo {
+        height:30px;
+    }
+    .nome-logo{
+        font-size: 1.6em;
+    }
+    .menu{
+        width: 70%;
+        height: 100%;
+    }
+    .btn-menu{
+        display: none;
+    }
+    .btn-close{
+        display: none;
+    }
+    .nav-menu{
+        display: inline-block;
+        background-color: transparent;
+        position: relative;
+        height: 100%;
+    }
+    ul {
+        display: block;
+        padding-top: 15%;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
+    ul li{
+        display: inline;
+        border-radius: 5px;
+        margin: 0;
+        padding: 0;
+    }
+    ul li a{
+        font-size: 0.9em;
+        padding: 2% 2%;
+        margin: 0;
+        border-radius: 5px;
+    }
+    ul li:hover{
+        border: none;
+    }
+    ul li a:hover {
+        background-color: #192d66;
+    }
+
+    /* ===== CORPO - PRIMEIRA PARTE===== */
+    .primeira-parte{
+        text-align: left;
+        width: 100%;
+        margin-bottom: 0;
+        margin-top: 1%;
+    }
+    .valor-cr{
+        padding-top: 0;
+        font-size: 1.5em;
+    }
+    .btn-historico{
+        display: none;
+    }
+    .div-historico {
+        position: relative;
+    }
+    .dica-historico{
+        color: black;
+    }
+    .div-tabela-historico{
+        display: block;
+        width: 45%;
+        float: right;
+        margin-top: 5.5%;
+    }
+    .titulo-tabela{
+        display: block;
+        font-weight: 500;
+        margin-top: 5%;
+    }
+    .tabela-historico{
+        border: 2px #294592 solid;
+        background-color: rgba(67, 114, 245, 0.3);
+        box-shadow: 0 0 8px #d3d2d2;
+        width: 100%;
+        margin-top: 1%;
+    }
+    .tabela-historico tr td{
+        height: 40px;
+        color: #294592;
+    }
+    .tabela-historico tr:hover td{
+        background-color: #294592cb;
+        border-radius: 10px;
+        color: white;
+    }
+    .tabela-historico tr:nth-child(1) td{
+        background-color: #294592;
+        color: white;
+    }
+
+    /* ===== CORPO - INPUT ALTERAÇÕES ===== */
+    .campos_alteracoes{
+        width: 55%;
+        float: left;
+    }
+    h2{
+        margin-top: 5%;
+    }
+    .aviso{
+        font-size: 1em;
+        width: 95%;
+        margin-right: unset;
+        margin-left: unset;
+    }
+    .input_alteracoes{
+        display: block;
+        width: 90%;
+    }
+    .btn-adc-alteracao{
+        display: none;
+    }
+    .icone-titulos{
+        display: inline-block;
+    }
+    footer{
+        clear: both;
+    }
+    footer span{
+        font-size: 0.9em;
+    }
+}
+@media screen and (min-width: 1280px) {
+    body{
+        background-image: url("./banco imagens/fundo-vermelho-desktop.png");
+    }
+    .cabecalho{
+        height: 65px;
+    }
+    .img-logo {
+        height:35px;
+    }
+    .nome-logo {
+        padding-left: 5%;
+        font-size: 1.75em;
+    }
+    ul li a{
+        font-size: 1em;
+        padding: 2% 2%;
+    }
+    h1 {
+        font-size: 3.3em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+}

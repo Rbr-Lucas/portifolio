@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172561442-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-172561442-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora de coeficiente de rendimento (CR)">
+    <meta name="keywords" content="calculadora,calculadora de cr,cr,coeficiente de rendimento,simulador,uff,ufrj,uerj,ufmg,usp">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3401dd7efb.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>MEU CR</title>
+</head>
+<body>
+    <header class='cabecalho'>
+        <main class = 'main-menu'>
+            <div class='logo'><a href="./index.html"><img src="./banco imagens/logo-45.png" alt="logo-alphabetum" class='img-logo'></a><a class = 'nome-logo' href="./index.html">meu cr</a></div>
+            <div class='menu'><button class='btn-menu'><i class="fas fa-bars fa-lg"></i></button>
+            <nav class = 'nav-menu'>
+                <span class='btn-close'><i class="fas fa-times"></i></span>
+                <ul>
+                    <li><a href="./index.html">SIMULADOR DE CR</a></li>
+                    <li><a href="">COMO USAR</a></li>
+                    <li><a href="">O QUE É CR?</a></li>
+                    <li><a href="">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+        </main>
+    </header>
+    <div class = 'corpo'>
+        <div class='primeira-parte'>
+            <h1>Simulador de CR</h1>
+            <p class='valor-cr'>SEU CR: <span class='cr_atualizado'>VAZIO</span></p>
+            <div class='div-historico'>
+                <button class='btn-historico'>histórico de alterações <span class='seta-historico'><i class="fas fa-arrow-down"></i></span></button>
+                <div class = 'div-tabela-historico'>
+                    <h4 class='titulo-tabela'>Histórico de alterações</h4>
+                    <p class='dica-historico'>Para apagar a alteração basta mante-la pressionada</p>
+                    <table class='tabela-historico'>
+                        <tr class='primeira-linha'><td>nome</td><td>alteração</td><td>nota final</td></tr>
+                        <tr class = 'primeira_linha_vazia'><td class='nome'><i>VAZIO</i></td><td class='alteracao'><i>NENHUMA</i></td><td class='nota'><i>X</i></td></tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class='campos_alteracoes'>
+            <h2>O que deseja fazer?</h2>
+            <p class='aviso'>Dica: Adicionar seu total de horas/créditos e CR atual, é como adicionar seu histórico! <a href="#">Saiba mais</a></p>
+            <button class='btn-adc-alteracao btn-adicionar'><i class="fas fa-plus"></i><span class='btn-nome'>Adicionar matéria</span><i class="far fa-arrow-alt-circle-right"></i></button>
+            <div class='input_alteracoes' id='adicionar_materia'>
+                <h3><span class='icone-titulos'><i class="fas fa-plus"></i></span> Adicionar matéria</h3>
+                <table class='tabela-input'>
+                    <tr><td><input class='campo_input_nome' id='campo_input_nome' type="text" placeholder='Nome da matéria'></td></tr>
+                    <tr><td><input type="number" id="campo_input_hora" placeholder='Carga horária/Créditos:'></td></tr> 
+                    <tr><td><input type="number" id="campo_input_nota" placeholder='Nota final:'></td></tr>
+                </table>
+                <button class='submit_button adc-materia' id='adicionar'>simular</button>
+            </div>
+            <button class='btn-adc-alteracao btn-remover'><i class="fas fa-times"></i><span class='btn-nome'>Remover matéria</span><i class="far fa-arrow-alt-circle-right"></i></button>
+            <div class='input_alteracoes' id='remover_materia'>
+                <h3><span class='icone-titulos'><i class="fas fa-times"></i></span> Remover matéria</h3>
+                <table class='tabela-input'>
+                    <tr><td><input class='campo_input_nome' id='campo_input_nome' type="text" placeholder='Nome da matéria'></td></tr>
+                    <tr><td><input type="number" id="campo_input_hora" placeholder='Carga horária/Créditos:'></td></tr>
+                    <tr><td><input type="number" id="campo_input_nota" placeholder='Nota final:'></td></tr>
+                </table>
+                <button class='submit_button adc-materia' id='remover'>simular</button>
+            </div>
+            <button class='btn-adc-alteracao btn-alterar'><i class="fas fa-exchange-alt"></i><span class='btn-nome'>Alterar média</span><i class="far fa-arrow-alt-circle-right"></i></button>
+            <div class='input_alteracoes' id='alterar_materia'>
+                <h3><span class='icone-titulos'><i class="fas fa-exchange-alt"></i></span> Alterar média</h3>
+                <table class='tabela-input'>
+                    <tr><td><input class='campo_input_nome' id='campo_input_nome' type="text" placeholder='Nome da matéria'></td></tr>
+                    <tr><td><input type="number" id="campo_input_hora" placeholder='Carga horária/Créditos:'></td></tr>
+                    <tr><td><input type="number" id="campo_input_nota_antiga" placeholder='Nota antiga:'></td></tr>
+                    <tr><td><input type="number" id="campo_input_nota" placeholder='Nota nova:'></td></tr>
+                </table>
+                <button class='submit_button adc-materia' id='alterar'>simular</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>
+            &copy; Lucas Ribeiro
+        </span>
+    </footer>
+    <script src='./animacoes.js'></script>
+    <script src="./validacoes.js"></script>
+    <script src="./calculos.js"></script>
+</body>
+</html>
